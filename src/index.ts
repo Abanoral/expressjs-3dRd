@@ -11,8 +11,6 @@ app.get("/", async (req, res) => {
   res.json({ Hello: "World" });
 });
 
-
-app.use(cors())
 app.use(express.json())
 
 let notes = [
