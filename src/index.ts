@@ -7,12 +7,6 @@ app.use(express.json());
 app.use(express.raw({ type: "application/vnd.custom-type" }));
 app.use(express.text({ type: "text/html" }));
 
-app.get("/", async (req, res) => {
-  res.json({ Hello: "World" });
-});
-
-app.use(express.json())
-
 let notes = [
   {
     id: 1,
